@@ -1,0 +1,13 @@
+edu\carrito\model\Producto.class
+edu\carrito\util\FormCarritoProducto.class
+edu\carrito\controller\DetalleController.class
+edu\carrito\repository\ProductoRepository.class
+edu\carrito\controller\ProductoController.class
+edu\carrito\util\TipoCarrito.class
+edu\carrito\model\Carrito.class
+edu\carrito\service\CarritoService.class
+edu\carrito\repository\CarritoRepository.class
+edu\carrito\CarritoApplication.class
+edu\carrito\service\ProductoService.class
+edu\carrito\controller\CarritoController.class
+edu\carrito\util\EstadoCarrito.class

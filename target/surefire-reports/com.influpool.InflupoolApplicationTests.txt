@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.influpool.InflupoolApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.524 s <<< FAILURE! - in com.influpool.InflupoolApplicationTests
+com.influpool.InflupoolApplicationTests  Time elapsed: 0.522 s  <<< ERROR!
+java.lang.IllegalStateException: Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test
+
