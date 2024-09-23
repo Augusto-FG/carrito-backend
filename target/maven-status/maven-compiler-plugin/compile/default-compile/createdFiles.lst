@@ -3,6 +3,7 @@ edu\carrito\util\FormCarritoProducto.class
 edu\carrito\controller\DetalleController.class
 edu\carrito\repository\ProductoRepository.class
 edu\carrito\controller\ProductoController.class
+swaggerConfig\SwaggerConfig.class
 edu\carrito\util\TipoCarrito.class
 edu\carrito\model\Carrito.class
 edu\carrito\service\CarritoService.class
