@@ -12,7 +12,11 @@ import javax.persistence.ManyToMany;
 
 import edu.carrito.util.EstadoCarrito;
 import edu.carrito.util.TipoCarrito;
-
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import lombok.Getter;
+import lombok.Setter;
+@Getter @Setter
 @Entity
 public class Carrito {
 	public Carrito() {
@@ -27,43 +31,13 @@ public class Carrito {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+        @Enumerated(EnumType.STRING) // Esto es importante
 	@Column
 	private TipoCarrito tipo;
+        @Enumerated(EnumType.STRING)
 	@Column
 	private EstadoCarrito estado;
 	@ManyToMany
 	Set<Producto> productos;
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	public TipoCarrito getTipo() {
-		return tipo;
-	}
-
-	public void setTipo(TipoCarrito tipo) {
-		this.tipo = tipo;
-	}
-
-	public EstadoCarrito getEstado() {
-		return estado;
-	}
-
-	public void setEstado(EstadoCarrito estado) {
-		this.estado = estado;
-	}
-
-	public Set<Producto> getProductos() {
-		return productos;
-	}
-
-	public void setProductos(Set<Producto> productos) {
-		this.productos = productos;
-	}
 
 }
